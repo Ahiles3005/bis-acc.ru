@@ -1911,7 +1911,7 @@ div.child tr:first-child {
 	margin-right: 20px;
 }
 .shm .form_description {
-	width: calc(100%-300px);
+	width: calc(100% - 300px);
 	font-weight: bold;
 	line-height: 1.5;
 	margin: 0 10px 0px 20px;
@@ -3191,8 +3191,19 @@ ul.hat_menu {
 } */
 @media only screen and (max-width: 480px) {
 	.hat_section.align.ba-custom {
+		/*flex-direction: column;*/
+		/*align-items: center;*/
+		display: none;
+	}
+	.hat_section.align.ba-custom.mobile-header {
+		display: flex;
 		flex-direction: column;
-		align-items: center;
+		height: 100px;
+	}
+
+	.hat_section.align.ba-custom.mobile-header	.logo {
+		margin:0;
+		position: initial;
 	}
 }
 .mobile .hat_link.zvon {

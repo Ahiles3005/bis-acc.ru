@@ -31,7 +31,7 @@ if (empty($result["rows"]))
 {
 	return false;
 }
-echo '<div style="text-align: center"><i class="fa fa-bars" aria-hidden="true"><span>Меню</span></i></div>';
+echo '<div style="text-align: center"><i class="fa fa-bars" aria-hidden="true"><span>Меню111</span></i></div>';
 echo '<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
     <ul class="hat_menu">
       <li><a href="https://bis-acc.ru/about/"><span itemprop="name">О компании</span></a></li>
