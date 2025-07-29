@@ -408,6 +408,12 @@
 		font: 48px/40px fontawesome;
 		color: #023158;
 	}
+
+	.mobile-header .fa-bars:before, .mobile-header .fa-phone:before, .mobile-header .fa-search:before {
+		font: 37px fontawesome;
+		color: #023158;
+	}
+
 	.hat_dop,
 	.hat_bot_wrapper,
 	.top_menu_wrapper {

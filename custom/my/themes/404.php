@@ -240,6 +240,37 @@
         </div>
     </div>
     <insert name="feedback_import">
+
+        <div class="hat_section align ba-custom mobile-header">
+            <a href="/" class="logo"> </a>
+
+
+            <i class="fa fa-phone zvon" aria-hidden="true">
+            </i>
+
+            <i class="fa fa-search mobile-search-toggle" aria-hidden="true"></i>
+            <i class="fa fa-bars mobile-menu-toggle" aria-hidden="true"></i>
+
+
+        </div>
+
+        <div class="mobile-header-search">
+            <insert name="show_search" module="search" button="" template="top-mobile"/>
+        </div>
+
+        <div class="mobile-menu-overlay">
+            <svg class="mobile-menu-toggle" width="24" height="24" viewBox="0 0 24 24" aria-label="Закрыть меню"
+                 role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg">
+                <line x1="18" y1="6" x2="6" y2="18" stroke="black" stroke-width="2"/>
+                <line x1="6" y1="6" x2="18" y2="18" stroke="black" stroke-width="2"/>
+            </svg>
+            <nav itemscope itemtype="http://schema.org/SiteNavigationElement" class="mobile-menu-content">
+                <ul class="hat_menu_mobile">
+                    <insert name="show_block" module="menu" id="4" template="hat-mobile"/>
+                    <insert name="show_block" module="menu" id="1" template="hat-mobile"/>
+                </ul>
+            </nav>
+        </div>
 </div>
 
 <div class="top_menu_wrapper">
