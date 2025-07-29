@@ -1,0 +1,41 @@
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MUSEOSANSCYRL_500.OTF');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MUSEOSANSCYRL_500_ITALIC.OTF');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MUSEOSANSCYRL_700.OTF');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MUSEOSANSCYRL_700_ITALIC.OTF');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MUSEOSANSCYRL_900.OTF');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Museo';
+    src: url('../fonts/MUSEOSANSCYRL_900_ITALIC.OTF');
+    font-weight: 900;
+    font-style: italic;
+}
