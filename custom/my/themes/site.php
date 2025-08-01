@@ -307,11 +307,11 @@ if (!defined("DIAFAN")) {
             <insert name="show_breadcrumb" current="true"/>
         </div>
         <div class="type_container clearfix">
-            <div class="type_sidebar">
+            <!--<div class="type_sidebar">
                 <div class="type_menu_container">
                     <insert name="show_block" module="menu" id="2" template="cat"/>
                 </div>
-            </div>
+            </div>-->
             <div class="type_content">
                 <div class="type_hat" style="margin-top: 10px;">
                     <h1>

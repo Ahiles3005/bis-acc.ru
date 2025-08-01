@@ -1522,7 +1522,7 @@ img {
 .type_content {
     padding: 1px 0;
     float: left;
-    width: calc(100% - 340px);
+    width: 100%;
     font-size: 16px;
     color: #000011;
     line-height: 1.3;
@@ -4522,3 +4522,22 @@ span {
 }
 
 /* lw-calc end */
+
+.my_buh_obslug_banner {
+	height: 300px;
+	background: url('/img/buhobsluj1.jpg');
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 1rem;
+	padding: 2rem;
+}
+.my_buh_obslug_banner_consult {
+	padding: 0 3rem;
+}
+.my_buh_obslug_banner_price.hat_link {
+	background-color: #013157;
+	padding: 0 3rem;
+	color: #fff;
+}
