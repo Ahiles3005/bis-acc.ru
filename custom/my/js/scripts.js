@@ -30,11 +30,26 @@ $("body").on("keypress", "input", function (e) {
     $(this).removeClass("error_input");
 });
 
+$(document).on("click", ".zvon-mobile", function (e) {
+    e.preventDefault();
+    $(".modal_window_wrapper").load("/mobil_phone.php", function (response, status, xhr) {
+        if ($(".modal_window_wrapper").is(":visible")) {
+            //$(".modal_window_wrapper").fadeOut(600); // Скрыть с анимацией
+        } else {
+            $(".modal_window_wrapper").fadeIn(600);  // Показать с анимацией
+        }
+    });
+});
+
+
 $(document).on("click", ".zvon", function (e) {
     e.preventDefault();
     $(".modal_window_wrapper").load("/zvon/", function (response, status, xhr) {
-        $(".phone_field").mask("+7-999-999-99-99");
-        $(".modal_window_wrapper").fadeToggle(600);
+        if ($(".modal_window_wrapper").is(":visible")) {
+            //$(".modal_window_wrapper").fadeOut(600); // Скрыть с анимацией
+        } else {
+            $(".modal_window_wrapper").fadeIn(600);  // Показать с анимацией
+        }
     });
 });
 

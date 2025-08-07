@@ -252,21 +252,21 @@ if (!defined("DIAFAN")) {
             <img src="/custom/my/img/logo.png" alt="Bis-acc">
         </a>
         <div class="bis-menu-btn">
-            <insert name="show_block" module="menu" id="1" template="hat" />
-                <insert name="show_search" module="search" button="" template="top" />
+            <insert name="show_block" module="menu" id="1" template="hat"/>
+            <insert name="show_search" module="search" button="" template="top"/>
 
         </div>
         <div class="">
-            <insert name="show_block" module="site" id="1" />
+            <insert name="show_block" module="site" id="1"/>
         </div>
     </div>
-    <insert name="feedback_import" />
+    <insert name="feedback_import"/>
 
     <div class="hat_section align ba-custom mobile-header">
         <a href="/" class="logo"> </a>
 
 
-        <i class="fa fa-phone zvon" aria-hidden="true">
+        <i class="fa fa-phone zvon-mobile" aria-hidden="true">
         </i>
 
         <i class="fa fa-search mobile-search-toggle" aria-hidden="true"></i>
@@ -291,7 +291,15 @@ if (!defined("DIAFAN")) {
                 <insert name="show_block" module="menu" id="1" template="hat-mobile"/>
             </ul>
         </nav>
+<!--        <div class="mobile-menu-contact">-->
+<!--            <span>Телефон: +7 (495) 727-06-30</span>-->
+<!--            <span>Email: info@bisoutsourcing.ru,  info@bis-acc.ru</span>-->
+<!--            <span>г. Москва, ул. 2-я Машиностроения 17, стр.1, офис 128</span>-->
+<!--            <span> г. Владимир, ул. Дворянская 27А, стр.17, офис 6</span>-->
+<!--        </div>-->
     </div>
+
+
 
 </div>
 
@@ -361,7 +369,9 @@ if (!defined("DIAFAN")) {
 <!-- noindex -->
 <div class="modal_window_wrapper">
     <insert name="show_form" module="feedback" site_id="17" template="ban"/>
-</div><!-- /noindex -->
+</div>
+<div class="modal_window_wrapper2"></div>
+<!-- /noindex -->
 <insert name="show_js"/>
 <script async src='<insert name="path">js/main.js'></script>
 <insert name="show_include" file="counters"/>

@@ -33,8 +33,13 @@ $cl1 = '';
 //    } else
 if ($row["active_child"]) {
     // начало пункта меню для активного дочернего пункта
-    echo '<li>';
+    echo '<li class="parent active-child">';
     echo '<div class="url-wrapper">';
+    ?>
+    <svg class="arrow-bottom" viewBox="0 0 5 9">
+        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z"></path>
+    </svg>
+    <?php
     //$cl1 = ' opened';
 } elseif ($row["children"]) {
 // начало пункта меню для элемента -родителя
@@ -85,7 +90,7 @@ echo ' <li class="parent">';
         echo '</a>';
     }
 
-        echo '</div>';
+    echo '</div>';
 
     //if ($result["show_all_level"] || $row["active_child"] || $row["active"])
     //{

@@ -44,5 +44,5 @@ echo '<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
    </ul>
    </nav>';
 
-echo '</ul>';
+//echo '</ul>';
 
