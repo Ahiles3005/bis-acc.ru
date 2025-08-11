@@ -316,8 +316,8 @@ if (isset($_REQUEST['debug'])) {
     <div class="mobile-menu-overlay">
         <svg class="mobile-menu-toggle" width="24" height="24" viewBox="0 0 24 24" aria-label="Закрыть меню"
              role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg">
-            <line x1="18" y1="6" x2="6" y2="18" stroke="black" stroke-width="2"/>
-            <line x1="6" y1="6" x2="18" y2="18" stroke="black" stroke-width="2"/>
+            <line x1="18" y1="6" x2="6" y2="18" stroke="#013157" stroke-width="2"/>
+            <line x1="6" y1="6" x2="18" y2="18" stroke="#013157" stroke-width="2"/>
         </svg>
         <nav itemscope itemtype="http://schema.org/SiteNavigationElement" class="mobile-menu-content">
             <ul class="hat_menu_mobile">
@@ -326,8 +326,8 @@ if (isset($_REQUEST['debug'])) {
             </ul>
         </nav>
         <div class="mobile-menu-contact">
-            <span>+7 (495) 727-06-30</span>
-            <span>info@bisoutsourcing.ru</span>
+            <span><a href="tel:+74957270630">+7 (495) 727-06-30</a></span>
+            <span><a href="mailto:info@bisoutsourcing.ru">info@bisoutsourcing.ru</a></span>
             <span>пн-пт 9:00-18:00</span>
             <br >
             <span>г. Москва, ул. 2-я Машиностроения 17, стр.1, офис 128</span>

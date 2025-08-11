@@ -3510,7 +3510,7 @@ ul.hat_menu {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgb(255 255 255);
+        background:#ebebeb;
         z-index: 9999;
         display: flex;
         flex-direction: column;
@@ -3521,7 +3521,7 @@ ul.hat_menu {
     .mobile-menu-overlay .mobile-menu-toggle {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 10px;
         cursor: pointer;
         stroke: black;
         width: 30px;
@@ -3620,12 +3620,18 @@ ul.hat_menu {
         padding-top: 30px;
         padding-bottom: 70px;
     }
-    .mobile-menu-contact span {
+    .mobile-menu-contact span, .mobile-menu-contact span a {
         color: #013157;
+        font-weight: unset;
     }
 
     .url-wrapper_level2 {
         padding:  10px 10px 10px 0px;
+    }
+
+    .url-wrapper_level2 a {
+        display: block;
+        width: 93%;
     }
 
 
