@@ -3443,6 +3443,16 @@ ul.hat_menu {
     display: none;
 }
 
+
+.top_menu_2 .arrow-bottom {
+    display: none;
+}
+
+.url-wrapper_level2 {
+    text-align: left;
+}
+
+
 @media only screen and (max-width: 480px) {
     .hat_section.align.ba-custom {
         /*flex-direction: column;*/
@@ -3565,6 +3575,7 @@ ul.hat_menu {
         cursor: pointer;
         position: absolute;
         right: 10px;
+        display: block !important;
     }
 
     .arrow-top path,
@@ -3601,6 +3612,26 @@ ul.hat_menu {
         background-color: #c0c0c0;
     }
 
+    .mobile-menu-contact {
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    .mobile-menu-contact span {
+        color: #013157;
+    }
+
+    .url-wrapper_level2 {
+        padding:  10px 10px 10px 0px;
+    }
+
+
+    .top_menu_2 .top_menu_3 {
+        display: none;
+    }
 
 }
 
@@ -4552,3 +4583,5 @@ span {
 	padding: 0 3rem;
 	color: #fff;
 }
+
+

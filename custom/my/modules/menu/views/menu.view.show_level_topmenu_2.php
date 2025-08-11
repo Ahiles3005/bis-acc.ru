@@ -69,6 +69,9 @@ foreach ($result["rows"][$result["parent_id"]] as $row)
 		echo '<li>';
 	}
 
+
+
+
 	if (
 		// на текущей странице нет ссылки, если не включена настройка "Текущий пункт как ссылка"
 		(!$row["active"] || $result["current_link"])
@@ -77,6 +80,16 @@ foreach ($result["rows"][$result["parent_id"]] as $row)
 		&& (!$result["hide_parent_link"] || empty($result["rows"][$row["id"]]))
 	)
 	{
+
+//var_dump($result["rows"]);
+//var_dump($row["id"]);
+        if(!empty($result["rows"][$row["id"]])){
+            echo '<div class="url-wrapper_level2">';
+            echo ' <svg class="arrow-bottom" viewBox="0 0 5 9">
+        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z"></path>
+    </svg>';
+        }
+
 		if ($row["othurl"])
 		{
 			echo '<a href="'.$row["othurl"].'"'.$row["attributes"].''
@@ -89,6 +102,7 @@ foreach ($result["rows"][$result["parent_id"]] as $row)
 			.(!empty($row["active"]) ? ' class="active"' : '')
 			.'>';
 		}
+
 	}
 
 
@@ -107,7 +121,16 @@ foreach ($result["rows"][$result["parent_id"]] as $row)
 	)
 	{
 		echo '</a>';
+
+
+
+        if(!empty($result["rows"][$row["id"]])){
+            echo '</div>';
+        }
+
 	}
+
+
 
 	// описание пункта меню
 	if (! empty($row["text"]))

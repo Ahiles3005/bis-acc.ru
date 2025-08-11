@@ -270,12 +270,13 @@
                     <insert name="show_block" module="menu" id="1" template="hat-mobile"/>
                 </ul>
             </nav>
-<!--            <div class="mobile-menu-contact">-->
-<!--                <span>Телефон: +7 (495) 727-06-30</span>-->
-<!--                <span>Email: info@bisoutsourcing.ru,  info@bis-acc.ru</span>-->
-<!--                <span>г. Москва, ул. 2-я Машиностроения 17, стр.1, офис 128</span>-->
-<!--                <span> г. Владимир, ул. Дворянская 27А, стр.17, офис 6</span>-->
-<!--            </div>-->
+            <div class="mobile-menu-contact">
+                <span>+7 (495) 727-06-30</span>
+                <span>info@bisoutsourcing.ru</span>
+                <span>пн-пт 9:00-18:00</span>
+                <br >
+                <span>г. Москва, ул. 2-я Машиностроения 17, стр.1, офис 128</span>
+            </div>
         </div>
 
 </div>

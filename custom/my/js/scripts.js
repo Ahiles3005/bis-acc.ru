@@ -5865,7 +5865,7 @@ $(document).ready(function () {
         $('.mobile-menu-overlay').toggleClass('active');
     });
 
-    $('.parent svg').click(function () {
+    $('.parent .url-wrapper svg').click(function () {
         if (this.classList.contains('arrow-bottom')) {
             $(this).closest('.parent').find('.dropdown-top-menu').show();
             this.classList.replace('arrow-bottom','arrow-top')
@@ -5876,4 +5876,15 @@ $(document).ready(function () {
             $(this).closest('.parent').find('.url-wrapper').removeClass('active')
         }
     })
+
+    $('.url-wrapper_level2 svg').click(function () {
+        if (this.classList.contains('arrow-bottom')) {
+            $(this).closest('li').find('.top_menu_3').show();
+            this.classList.replace('arrow-bottom','arrow-top')
+        } else {
+            $(this).closest('li').find('.top_menu_3').hide();
+            this.classList.replace('arrow-top','arrow-bottom')
+        }
+    })
+
 });
