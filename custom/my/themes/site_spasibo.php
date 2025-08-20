@@ -316,17 +316,101 @@ if (!defined("DIAFAN")) {
             <insert name="show_breadcrumb" current="true"/>
         </div>
         <div class="type_container clearfix">
-            <!--<div class="type_sidebar">
-                <div class="type_menu_container">
-                    <insert name="show_block" module="menu" id="2" template="cat"/>
-                </div>
-            </div>-->
+
             <div class="type_content">
-                <div class="type_hat" style="margin-top: 10px;">
-                    <h1>
-                        <insert name="show_h1"/>
-                    </h1>
+<!--                <div class="type_hat" style="margin-top: 10px;">-->
+<!--                    <h1>-->
+<!--                        <insert name="show_h1"/>-->
+<!--                    </h1>-->
+<!--                </div>-->
+
+
+                <div class="spasibo_wraper">
+                    <div class="spasibo-left">
+                        <h1>СПАСИБО ЗА ВАШУ ЗАЯВКУ!</h1>
+                        <p> Мы свяжемся с вами в ближайшее время.</p>
+                        <br>
+                        <p> Срочно нужна помощь бухгалтера?</p>
+                        <p> Звоните:
+                            <a href="tel:+74957290630">
+                                <i class="fa fa-phone zvon-mobile" aria-hidden="true"></i>
+                                +7(495) 729-06-30.
+                            </a> </p>
+                    </div>
+                    <div class="spasibo-right">
+                        <img src="/custom/my/img/backgound-spasibo.png">
+                    </div>
+
                 </div>
+
+
+                <style>
+                    .spasibo_wraper {
+                        display: flex;
+                        width: 100%;
+                        max-width: 860px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        box-sizing: border-box;
+                    }
+
+                    .spasibo-left {
+                        flex: 1;
+                        text-align: left;
+                        padding-top: 11%;
+                    }
+
+                    .spasibo-left h1 {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        margin-bottom: 10px;
+                    }
+
+                    .spasibo-left p {
+                        margin: 5px 0;
+                        font-size: 1rem;
+                        line-height: 1.4;
+                    }
+
+
+                    .spasibo-right {
+                        margin-left: auto;
+                    }
+
+                    .spasibo-right img {
+                        max-width: 300px;
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+
+                    /* Адаптив */
+                    @media (max-width: 768px) {
+                        .spasibo_wraper {
+                            flex-direction: column;
+                            text-align: center;
+
+                        }
+
+                        .spasibo-left {
+                            max-width: 100%;
+                            margin-bottom: 20px;
+                        }
+
+                        .spasibo-right {
+                            margin-left: 50%;
+                            position: relative;
+                        }
+
+                        .spasibo-right img {
+                            max-width: 300px;
+                            width: 100%;
+                            height: auto;
+                            object-fit: contain;
+                        }
+
+                </style>
+
                 <insert name="show_text"/>
                 <insert name="show_module"/>
             </div>

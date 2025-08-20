@@ -3453,7 +3453,7 @@ ul.hat_menu {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
     .hat_section.align.ba-custom {
         /*flex-direction: column;*/
         /*align-items: center;*/
